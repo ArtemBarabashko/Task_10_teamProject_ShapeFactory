@@ -1,3 +1,4 @@
+package myPackage;
 
 public class WhiteFactory extends BaseFactory{
 	

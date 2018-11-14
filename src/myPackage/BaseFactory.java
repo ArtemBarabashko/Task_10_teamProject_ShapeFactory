@@ -1,3 +1,4 @@
+package myPackage;
 
 public abstract class BaseFactory {
 	
