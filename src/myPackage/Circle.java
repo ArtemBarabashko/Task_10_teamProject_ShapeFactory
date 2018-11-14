@@ -1,13 +1,7 @@
 package myPackage;
 
-public class Circle {
-    double radius = 10;
+public abstract class Circle {
+    abstract double getRadius();
 
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
+    abstract void setColor(String color);
 }
