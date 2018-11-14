@@ -1,6 +1,6 @@
 package myPackage;
 
-public class LogicTriangle implements Logic {
+public class LogicTriangle implements ILogic {
     @Override
     public double getArea(Object object) {
         Triangle triangle = (Triangle) object;

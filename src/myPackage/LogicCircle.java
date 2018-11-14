@@ -1,9 +1,9 @@
 package myPackage;
 
-public class LogicCircle implements Logic{
+public class LogicCircle implements ILogic {
     @Override
     public double getArea(Object object) {
-        Circle circle = (Circle)object;
+        Circle circle = (myPackage.Circle)object;
         return (Math.PI) * circle.getRadius() * circle.getRadius();
     }
 
