@@ -10,7 +10,7 @@ public class Main {
         System.out.println(logicTriangle.getPerimeter(triangle));
 
         System.out.println(Logic.getArea(circle));
-        System.out.println(Logic.getPerimeter(triangle));
+        System.out.println(Logic.getArea(triangle));
 
 
     }
