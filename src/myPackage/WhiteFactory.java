@@ -4,13 +4,13 @@ public class WhiteFactory extends BaseFactory{
 	
 	public Circle createCircle() {
 		Circle circle = new Circle();
-		//circle.setColor("white");
+		circle.setColor("white");
 		return circle;
 	}
 	
 	public Triangle createTriangle() {
 		Triangle triangle = new Triangle();
-		//triangle.setColor("white");
+		triangle.setColor("white");
 		return triangle;
 	}
 	
