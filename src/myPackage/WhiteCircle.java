@@ -1,22 +1,13 @@
 package myPackage;
 
-public class WhiteCircle extends Circle{
-    double radius = 10;
-    String color;
+public class WhiteCircle extends Circle {
 
-    public String getColor() {
-        return color;
+    public WhiteCircle() {
+        color = "white";
     }
+    public WhiteCircle(double radius){
+        super(radius);
+        color="white";
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
-        this.radius = radius;
     }
 }

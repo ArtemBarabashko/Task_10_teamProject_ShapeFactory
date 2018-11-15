@@ -4,7 +4,7 @@ public class BlackFactory extends BaseFactory{
 	
 	public Circle createCircle() {
 		Circle circle = new WhiteCircle();
-		circle.setColor("black");
+
 		return circle;
 	}
 	
