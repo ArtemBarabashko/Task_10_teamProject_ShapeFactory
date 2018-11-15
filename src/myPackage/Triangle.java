@@ -1,31 +1,12 @@
 package myPackage;
 
-public class Triangle {
-    double sideA = 2.5;
-    double sideB = 3.2;
-    double sideC = 4.0;
+public abstract class Triangle {
 
-    public double getSideA() {
-        return sideA;
-    }
+    abstract double getSideA();
 
-    public void setSideA(double sideA) {
-        this.sideA = sideA;
-    }
+    abstract double getSideB();
 
-    public double getSideB() {
-        return sideB;
-    }
+    abstract double getSideC();
 
-    public void setSideB(double sideB) {
-        this.sideB = sideB;
-    }
-
-    public double getSideC() {
-        return sideC;
-    }
-
-    public void setSideC(double sideC) {
-        this.sideC = sideC;
-    }
+    abstract void setColor(String color);
 }
