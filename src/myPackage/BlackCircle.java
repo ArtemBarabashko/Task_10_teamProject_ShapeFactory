@@ -1,14 +1,25 @@
 package myPackage;
 
 public class BlackCircle extends Circle {
-
-    public BlackCircle() {
-        color = "black";
-    }
+    private double radius;
 
     public BlackCircle(double radius) {
-        super(radius);
-        color = "black";
+        this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public String toString() {
+        return "BlackCircle{" +
+                "radius=" + radius +
+                '}';
     }
 }
 
