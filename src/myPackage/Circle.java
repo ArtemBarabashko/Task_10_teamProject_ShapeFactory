@@ -1,13 +1,12 @@
 package myPackage;
+public class Circle{
+    private String color;
 
-public class Circle {
-    double radius = 10;
-
-    public double getRadius() {
-        return radius;
+    public void setColor(String color) {
+        this.color = color;
     }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
+    public String getColor() {
+        return color;
     }
 }
