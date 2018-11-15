@@ -1,16 +1,35 @@
 package myPackage;
 
-class Logic {
+public class Logic {
 
-    static double getArea(Circle circle) {
+    public static double getArea(Object object) {
+        if (object.getClass().equals(Circle.class)) {
+            return getCircleArea(object);
+        } else {
+            return getTriangleArea(object);
+        }
+    }
+
+    public static double getPerimeter(Object object) {
+        if (object.getClass().equals(Circle.class)) {
+            return getCirclePerimeter(object);
+        } else {
+            return getTrianglePerimeter(object);
+        }
+    }
+
+    private static double getCircleArea(Object object) {
+        Circle circle = (Circle) object;
         return (Math.PI) * circle.getRadius() * circle.getRadius();
     }
 
-    static double getPerimeter(Circle circle) {
+    private static double getCirclePerimeter(Object object) {
+        Circle circle = (Circle) object;
         return 2 * Math.PI * circle.getRadius();
     }
 
-    static double getArea(Triangle triangle) {
+    private static double getTriangleArea(Object object) {
+        Triangle triangle = (Triangle) object;
         double sideA = triangle.getSideA() < triangle.getSideB() ?
                 triangle.getSideA() : triangle.getSideB();
         double sideB = triangle.getSideB() < triangle.getSideC() ?
@@ -18,7 +37,8 @@ class Logic {
         return (sideA * sideB) / 2;
     }
 
-    static double getPerimeter(Triangle triangle) {
+    private static double getTrianglePerimeter(Object object) {
+        Triangle triangle = (Triangle) object;
         return triangle.getSideA() + triangle.getSideB() + triangle.getSideC();
     }
 }

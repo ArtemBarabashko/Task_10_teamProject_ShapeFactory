@@ -2,11 +2,11 @@ package myPackage;
 
 public class Main {
     public static void main(String[] args) {
-        Circle circle = new WhiteCircle(5);
-        Triangle triangle = new WhiteTriangle();
+        Circle circle = new Circle();
+        Triangle triangle = new Triangle();
 
         System.out.println(Logic.getArea(circle));
-        System.out.println(Logic.getArea(triangle));
+        System.out.println(Logic.getPerimeter(triangle));
 
 
     }
