@@ -1,6 +1,6 @@
 package myPackage;
 
-class Logic {
+public class Logic {
 
     static double getArea(Circle circle) {
         return (Math.PI) * circle.getRadius() * circle.getRadius();
@@ -11,14 +11,24 @@ class Logic {
     }
 
     static double getArea(Triangle triangle) {
-        double sideA = triangle.getSideA() < triangle.getSideB() ?
-                triangle.getSideA() : triangle.getSideB();
-        double sideB = triangle.getSideB() < triangle.getSideC() ?
-                triangle.getSideB() : triangle.getSideC();
-        return (sideA * sideB) / 2;
+        try {
+            double sideA = triangle.getSideA() < triangle.getSideB() ?
+                    triangle.getSideA() : triangle.getSideB();
+            double sideB = triangle.getSideB() < triangle.getSideC() ?
+                    triangle.getSideB() : triangle.getSideC();
+            return (sideA * sideB) / 2;
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 
     static double getPerimeter(Triangle triangle) {
-        return triangle.getSideA() + triangle.getSideB() + triangle.getSideC();
+        try {
+            return triangle.getSideA() + triangle.getSideB() + triangle.getSideC();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }
