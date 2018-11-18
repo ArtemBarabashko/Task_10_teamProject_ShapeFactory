@@ -6,8 +6,8 @@ public class BlackFactory extends BaseFactory{
 		return circle;
 	}
 	
-	public Triangle createTriangle() {
-		Triangle triangle = new BlackTriangle();
-		return triangle;
-	}
+//	public Triangle createTriangle() {
+//		Triangle triangle = new BlackTriangle();
+//		return triangle;
+//	}
 }
