@@ -1,14 +1,20 @@
 
 public class Factory {
 	
-	public BaseFactory getFactory(String color) {
+	private BaseFactory baseFactory;
+	
+	public Factory(BaseFactory baseFactory) {
+		this.baseFactory = baseFactory;
+	}
+	
+	public static BaseFactory getFactory(String color) {
 		
 		if (color.toLowerCase().equals("black")){
-			return BlackFactory.createFactory();
+			return new BlackFactory();
 		}
 		
 		if (color.toLowerCase().equals("white")){
-			return WhiteFactory.createFactory();
+			return new WhiteFactory();
 		}
 		
 		return null;
