@@ -6,9 +6,9 @@ public class WhiteFactory extends BaseFactory{
 		return circle;
 	}
 	
-	public Triangle createTriangle() {
-		Triangle triangle = new WhiteTriangle();
-		return triangle;
-	}
+//	public Triangle createTriangle() {
+//		Triangle triangle = new WhiteTriangle();
+//		return triangle;
+//	}
 
 }
