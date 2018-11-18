@@ -1,4 +1,4 @@
-
+package myPackage;
 public class WhiteFactory extends BaseFactory{
 	
 	public Circle createCircle() {

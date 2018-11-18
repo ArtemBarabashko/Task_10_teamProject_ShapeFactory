@@ -1,4 +1,4 @@
-
+package myPackage;
 public class Factory {
 	
 	private BaseFactory baseFactory;
